@@ -5,6 +5,7 @@ pom.xml.asc
 /classes/
 /target/
 /checkouts/
+/public/app/bower_components/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/

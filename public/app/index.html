@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lambdaroyal Warehouse Tower</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/ng-websocket/ng-websocket.js"></script>
+    <script src="app.module.js"></script>
+
+    <!-- D3 for Rendering Cards etc. -->
+    <script src="bower_components/d3/d3.js"></script>
+    <script type="text/javascript" src="http://static.mentful.com/gantt-chart-d3v2.js"></script>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+  </head>
+  <body ng-controller="ctrl">
+    <div class="container">
+      <div class="row text-center">
+        <img src="assets/img/logo.png"/>
+      </div>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('1mi')">1 MI</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('5mi')">5 MI</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('1hr')">1 HR</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('3hr')">3 HR</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('6hr')">6 HR</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('1day')">1 DAY</button>
+      <button class="btn btn-primary" type="button" ng-click="changeTimeDomain('1week')">1 WEEK</button>
+      <div class="container"></div>
+      <div class="header"></div>
+      <div class="footer">
+        Powered by <a href="https://github.com/gixxi" class="logo">Lambda Royal</a>,<a href="http://d3j.orgs" class="logo">D3</a> and <a href="http://www.clojure.org" class="logo">Clojure</a>
+      </div>
+    </div>
+  </body>
+</html>

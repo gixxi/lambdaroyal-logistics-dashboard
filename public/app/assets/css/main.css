@@ -1,0 +1,68 @@
+body, html {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    height: 100%;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.right {
+    border-right: 1px solid #ccc;
+}
+
+.footer {
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    bottom: 9px;
+    left: 0;
+    right: 0;
+    color: #100100100;
+}
+
+.footer .logo {
+    display: inline-block;
+    background: transparent;
+    color: #100100100;
+    line-height: 22px;
+    text-decoration: underline;
+    font-weight: bold;    
+}
+
+
+.row:focus {outline: 0;}
+
+.chart {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+}
+
+.axis path,.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.bar {
+	fill: #33b5e5;
+}
+
+.bar-failed {
+	fill: #CC0000;
+}
+
+.bar-running {
+	fill: #669900;
+}
+
+.bar-succeeded {
+	fill: #33b5e5;
+}
+
+.bar-killed {
+	fill: #ffbb33;
+}
