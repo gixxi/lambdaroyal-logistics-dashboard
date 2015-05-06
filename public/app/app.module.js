@@ -33,7 +33,7 @@ app.controller('ctrl', function ($scope, $http, $rootScope, $websocket, $locatio
     $scope.minDate = $scope.tasks[0].startDate;
 
     $scope.format = "%H:%M";
-    $scope.timeDomainString = "1day";
+    $scope.timeDomainString = "1mi";
 
     $scope.gantt = d3.gantt().taskTypes($scope.taskNames).taskStatus($scope.taskStatus).tickFormat($scope.format).height(450).width(document.body.offsetWidth - 250);
 
